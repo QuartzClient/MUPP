@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "mupp",
+  "version": "${version}",
+  "name": "Mupp",
+  "description": "Minecraft Ultra Performance Package",
+  "authors": [
+    "CADIndie",
+    "Flamgop",
+    "Judge"
+  ],
+  "contact": {
+    "repo": "https://github.com/MuppClient/MUPP"
+  },
+  "license": "MIT",
+  "icon": "assets/mupp/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.qcxr.mupp.client.MuppClient"
+    ],
+    "main": [
+      "com.qcxr.mupp.Mupp"
+    ]
+  },
+  "mixins": [
+    "mupp.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
